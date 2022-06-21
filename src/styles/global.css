@@ -1,0 +1,22 @@
+/*Setup para o tailwind*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-zinc-900 text-zinc-100;
+}
+
+/*
+CMS = Content Management System (Disponibiliza para terceiras uma plataforma de gerenciamento dos cadastros no sistema)
+Wordpress = Traz tanto o painel de ADMIN tanto quanto a parte visual do front-end (temas)
+Headless CMS = Painel de ADMIN (dados fornecidos através de uma API REST ou GraphQL)
+
+React que consome essa API do CMS
+
+COMANDOS DE UMA API CMS GraphQL
+query / mutation
+
+query = buscar dados
+mutation = criar, alterar ou deletar dados
+*/
