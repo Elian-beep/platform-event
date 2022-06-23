@@ -43,16 +43,24 @@ export function Video(props: VideoProps) {
         }
     });
 
+    console.log(data?.lesson.videoId);
+
+    while(!data){
+        return <h1>carregando...</h1>
+    }
+    
+    
     return (
         <div className="flex-1">
             <div className="bg-black flex justify-center">
                 <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video"> {/* AREA DO VIDEO PLAYER */}
                     <Player>
-                        <Youtube videoId="SO4-izct7Mc" />
+                        <Youtube videoId={data?.lesson.videoId} />
                         <DefaultUi />
                     </Player>
                 </div>
             </div>
+            {/* SO4-izct7Mc */}
 
             <div className="p-8 max-w-[1100px] mx-auto">                {/* CONTAINER GERAL */}
                 <div className="flex items-start gap-16">               {/* SESSÃO DOS ELEMENTOS */}
