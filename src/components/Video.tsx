@@ -46,7 +46,11 @@ export function Video(props: VideoProps) {
     console.log(data?.lesson.videoId);
 
     while(!data){
-        return <h1>carregando...</h1>
+        return(
+            <div className="flex-1">
+                <h1>carregando...</h1>
+            </div>
+        );
     }
     
     
