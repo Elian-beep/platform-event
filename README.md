@@ -4,7 +4,7 @@
 | -------------  | --- |
 | :sparkles: Nome        | **Platform Event**
 | :label: Tecnologias | reactjs, styled components, javascript, html, css
-| :rocket: URL         | https:platform-event.vercel.app/
+| :rocket: URL         | https://platform-event.vercel.app/
 | :fire: Desafio     | Ignite Lab
 
 ## Detalhes do projeto
